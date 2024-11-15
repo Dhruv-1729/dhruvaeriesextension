@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dhruv's Aeries Grade Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 300px; 
+      height: 400px; 
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    h2 {
+      color: darkgreen;
+      margin-bottom: 5px;
+    }
+
+    h4 {
+      color: blue;
+      margin-bottom: 15px;
+    }
+
+    #calculate {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #calculate:hover {
+      background-color: #45a049;
+    }
+
+    #result {
+      margin-top: 15px;
+      text-align: center;
+    }
+
+    .success-message {
+      color: darkblue; 
+      font-size: 1.2em; 
+      font-weight: bold;
+    }
+
+    .grade-label {
+      font-size: 1.1em;
+      color: #004080; 
+      margin-top: 10px;
+    }
+
+    .grade-value {
+      font-size: 2em; 
+      color: #004080;
+      font-weight: bold;
+    }
+
+    .footer {
+      font-size: 0.9em;
+      color: black;
+      text-align: right;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Aeries Overall Grade Calculator</h2>
+  <h4>Go to the subject's <u>gradebook details</u> page and click the button to calculate!</h4>
+  
+  <!-- Button to calculate grade -->
+  <button id="calculate">Calculate Grade</button>
+  
+  <!-- Result section for displaying grade and messages -->
+  <div id="result">
+    <!-- This area will be updated by JavaScript with the result -->
+  </div>
+
+  <!-- Footer with author credit -->
+  <div class="footer">Extension made by Dhruv :&rpar;</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
