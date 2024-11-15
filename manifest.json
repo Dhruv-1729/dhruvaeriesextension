@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
     "name": "Dhruv's Grade Calculator",
-    "version": "2.9",
-    "description": "Extension for Aeries which calculates the overall grade for a subject because SOME TEACHERS are too lazy to turn the option on",
+    "version": "3.2",
+    "description": "Extension for Aeries which calculates the overall grade for a subject because SOME TEACHERS are too lazy to turn on the option",
     "permissions": ["activeTab", "scripting"],
     "action": {
       "default_popup": "popup.html",
