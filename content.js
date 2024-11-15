@@ -19,6 +19,13 @@ function calculateGrade() {
 
         const weightText = cells[1]?.innerText.trim(); // "Perc of Grade" column
         const gradeText = cells[4]?.innerText.trim();  // "Perc" column
+        const maxText = cells[3]?.innerText.trim();    // "Max" column
+
+        // Skip the row if the "Max" column is 0
+        if (parseFloat(maxText) === 0) {
+            console.log(`Row ${index} skipped because "Max" is 0.`);
+            return;
+        }
 
         //debug
         console.log(`Row ${index} - Weight: ${weightText}, Grade: ${gradeText}`);
